@@ -1,29 +1,18 @@
-<h1>Listing posts</h1>
+<h1>Your posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Body</th>
-      <th>User</th>
-      <th>Starred</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= render 'form' %>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.body %></td>
-        <td><%= post.user_id %></td>
-        <td><%= post.starred %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<% @posts.each do |post| %>
+<div class="post">
+  <div class="post-body">
+    <%= post.body %>
+  </div>
+  <div class="post-date">
+    <%= link_to post.created_at, post %>
+  </div>
+  <div class="post-meta">
+    <%= link_to 'Edit', edit_post_path(post) %>,
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+</div>
+<% end %>
