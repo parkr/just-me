@@ -38,7 +38,6 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    @post.user_id = current_user.id
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
@@ -64,10 +63,13 @@ class PostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
+      unless @post.user_id.eql?(current_user.id)
+        redirect_to posts_url, notice: "You don't have access to that post."
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:body, :user_id, :starred)
+      params.require(:post).permit(:body)
     end
 end
