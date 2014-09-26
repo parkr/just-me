@@ -32,6 +32,10 @@ gem 'bcrypt', '~> 3.1.7'
 # Use thin as the app server
 gem 'thin'
 
+# Omniauth
+gem 'omniauth'
+gem 'omniauth-github'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

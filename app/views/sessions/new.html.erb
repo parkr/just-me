@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="span10 offset1">
+    <% if logged_in? %>
+      <a href="<%= logout_path %>" class="btn"><%= t('auth.logout') %></a>
+    <% else %>
+      <div class="text-center">
+        <a href="/auth/github" class="btn"><i class="icon-github-alt"></i> <span><%= t('auth.github_html') %></span></a>
+      </div>
+    <% end %>
+  </div>
+</div>
