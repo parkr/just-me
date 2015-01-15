@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  notifications:
+    account_created: "Successfully registered your little space on the interwebs."
