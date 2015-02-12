@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   resources :services, only: %i(index create destroy)
 
+  get '/hubot/info' => 'application#status_check'
+
   root to: "posts#index"
 end

@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   helper_method :current_service
 
+  def status_check
+    render :text => ":)"
+  end
+
   protected
   def current_user
     @current_user ||= User.find(session[:user_id]) if session.has_key?(:user_id)
