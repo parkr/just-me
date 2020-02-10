@@ -96,7 +96,7 @@ GEM
     omniauth-oauth2 (1.6.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
-    pg (1.2.2)
+    pg (0.21.0)
     rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -179,7 +179,7 @@ DEPENDENCIES
   jquery-rails
   omniauth
   omniauth-github
-  pg (~> 1.2)
+  pg (~> 0.18)
   rails (= 4.2.11.1)
   rails_12factor
   sass-rails (~> 4.0.3)

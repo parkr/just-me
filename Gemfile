@@ -5,7 +5,7 @@ ruby '2.5.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.1'
 # Use postgres as the database for Active Record
-gem 'pg', '~> 1.2'
+gem 'pg', '~> 0.18' # RAILS DOESN"T SUPPORT 1.0 AT THIS VERSION
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,6 +43,4 @@ gem 'omniauth-github'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :production do
-  gem 'rails_12factor'
-end
+gem 'rails_12factor'
