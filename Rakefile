@@ -4,3 +4,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+task :postdeploy => [:"db:prepare", :"db:seed"] do
+  puts " ===> Post-deploy complete!"
+end
