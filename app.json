@@ -1,0 +1,16 @@
+{
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "rollbar"
+  ],
+  "env": {
+    "SECRET_KEY_BASE": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    }
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake postdeploy"
+  },
+  "success_url": "/"
+}
