@@ -3,11 +3,11 @@ source 'https://rubygems.org'
 ruby '2.5.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11.1'
+gem 'rails', '5.0.7.2'
 # Use postgres as the database for Active Record
 gem 'pg', '~> 0.18' # RAILS DOESN"T SUPPORT 1.0 AT THIS VERSION
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
