@@ -6,6 +6,6 @@ require File.expand_path('../config/application', __FILE__)
 Rails.application.load_tasks
 
 desc "Post-deploy tasks after creating a Heroku review app."
-task :postdeploy => [:"db:setup"] do
+task :postdeploy => [:"db:migrate", :"db:seed"] do
   puts " ===> Post-deploy complete!"
 end
