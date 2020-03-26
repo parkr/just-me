@@ -15,6 +15,9 @@ gem 'coffee-rails', '~> 4.2.2'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
 
+# Unclear why we need listen but I can't run rake without it.
+gem 'listen', group: :development
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -36,11 +39,5 @@ gem 'thin'
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor'
