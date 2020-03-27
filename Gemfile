@@ -18,6 +18,9 @@ gem 'therubyracer',  platforms: :ruby
 # Unclear why we need listen but I can't run rake without it.
 gem 'listen', group: :development
 
+# Snappy boots
+gem 'bootsnap'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
