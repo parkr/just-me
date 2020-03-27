@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.7'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.4.2'
@@ -17,6 +17,9 @@ gem 'therubyracer',  platforms: :ruby
 
 # Unclear why we need listen but I can't run rake without it.
 gem 'listen', group: :development
+
+# Snappy boots
+gem 'bootsnap'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
