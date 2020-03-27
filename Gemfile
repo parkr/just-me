@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.5.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.7.2'
+gem 'rails', '5.1.7'
 # Use postgres as the database for Active Record
 gem 'pg', '~> 0.18' # RAILS DOESN"T SUPPORT 1.0 AT THIS VERSION
 # Use SCSS for stylesheets
@@ -14,6 +14,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2.2'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
+
+# Unclear why we need listen but I can't run rake without it.
+gem 'listen', group: :development
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -36,11 +39,5 @@ gem 'thin'
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor'
