@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.2'
+gem 'rails', '6.0.2.2'
 # Use postgres as the database for Active Record
 gem 'pg', '~> 1.2' # RAILS DOESN"T SUPPORT 1.0 AT THIS VERSION
 # Use SCSS for stylesheets
@@ -42,5 +42,3 @@ gem 'thin'
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-
-gem 'rails_12factor'
