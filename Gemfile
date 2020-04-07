@@ -42,5 +42,3 @@ gem 'thin'
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
-
-gem 'rails_12factor'
