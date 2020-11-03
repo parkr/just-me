@@ -170,7 +170,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (1.1.0)
+    sdoc (2.0.0)
       rdoc (>= 5.0)
     spring (2.1.1)
     sprockets (4.0.2)
@@ -217,7 +217,7 @@ DEPENDENCIES
   pg (~> 1.2)
   rails (= 6.0.3.4)
   sassc-rails (~> 2.0)
-  sdoc (~> 1.1.0)
+  sdoc (~> 2.0.0)
   spring
   therubyracer
   thin
