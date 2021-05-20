@@ -16,6 +16,9 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+        ports:
+          # Maps tcp port 5432 on service container to the host
+          - 5432:5432
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
@@ -27,4 +30,4 @@ jobs:
     - run: script/bootstrap
     - run: script/cibuild
       env:
-        DATABASE_URL: postgresql://:postgres@postgres:5432/just-me?pool=5
+        DATABASE_URL: postgresql://:postgres@localhost:5432/just-me?pool=5
