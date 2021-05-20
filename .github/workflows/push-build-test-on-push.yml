@@ -28,6 +28,3 @@ jobs:
         ruby-version: 2.6 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: script/bootstrap
-    - run: script/cibuild
-      env:
-        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/just-me?pool=5
