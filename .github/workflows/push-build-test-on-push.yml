@@ -30,4 +30,4 @@ jobs:
     - run: script/bootstrap
     - run: script/cibuild
       env:
-        DATABASE_URL: postgresql://:postgres@localhost:5432/just-me?pool=5
+        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/just-me?pool=5
