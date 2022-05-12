@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.7.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.1.5.1'
+gem 'rails', '7.0.3'
 # Use postgres as the database for Active Record
 gem 'pg', '~> 1.3' # RAILS DOESN"T SUPPORT 1.0 AT THIS VERSION
 # Use SCSS for stylesheets
@@ -12,8 +12,10 @@ gem 'sassc-rails', '~> 2.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 5.0.0'
+# No longer bundled with Rails.
+gem 'sprockets-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer',  platforms: :ruby
+# gem 'therubyracer',  platforms: :ruby
 
 # Unclear why we need listen but I can't run rake without it.
 gem 'listen', group: :development
