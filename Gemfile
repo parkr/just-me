@@ -36,7 +36,7 @@ gem 'sdoc', '~> 2.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.17'
+gem 'bcrypt', '~> 3.1.18'
 
 # Use thin as the app server
 gem 'thin'
