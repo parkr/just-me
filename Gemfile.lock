@@ -152,7 +152,7 @@ GEM
     omniauth-oauth2 (1.8.0)
       oauth2 (>= 1.4, < 3)
       omniauth (~> 2.0)
-    pg (1.4.3)
+    pg (1.4.4)
     psych (4.0.3)
       stringio
     racc (1.6.0)
