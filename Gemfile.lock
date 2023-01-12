@@ -202,7 +202,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sdoc (2.5.0)
+    sdoc (2.6.0)
       rdoc (>= 5.0)
     snaky_hash (2.0.1)
       hashie
@@ -252,7 +252,7 @@ DEPENDENCIES
   pg (~> 1.4)
   rails (= 7.0.4)
   sassc-rails (~> 2.0)
-  sdoc (~> 2.5.0)
+  sdoc (~> 2.6.0)
   spring
   sprockets-rails
   thin
